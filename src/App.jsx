@@ -30,12 +30,9 @@ function App() {
       <header className="header">
         <div className="container header-inner">
           <a href="/" className="logo">
-            <div className="logo-mark">
-              <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
-                <rect x="2" y="2" width="28" height="28" rx="6" fill="#00ff88" fillOpacity="0.12" stroke="#00ff88" strokeWidth="1.5"/>
-                <text x="16" y="21" textAnchor="middle" fill="#00ff88" fontFamily="JetBrains Mono, monospace" fontSize="14" fontWeight="700">TN</text>
-              </svg>
-            </div>
+            <div className="logo">
+  <img src="/takenote-icon.png" alt="Take Note Pro" className="logo-icon" />
+</div>
             <span className="logo-text">Take Note <span className="logo-accent">Pro</span></span>
           </a>
           <nav className="nav">
@@ -72,7 +69,7 @@ function App() {
             Logging for <span className="text-accent">Film & TV</span>
           </h1>
           <p className="hero-subtitle fade-in">
-            Capture notes with precise running timecode. Export to industry-standard formats.
+            Capture notes that sync with production timecode. Export to industry-standard formats.
             Built by a working sound recordist for real production workflows.
           </p>
           <div className="hero-ctas fade-in">
@@ -86,18 +83,18 @@ function App() {
           </div>
           <div className="hero-stats fade-in">
             <div className="stat">
-              <span className="stat-value">24/25fps</span>
-              <span className="stat-label">Frame Rates</span>
+              <span className="stat-value">Supports All Frame Rates</span>
+              <span className="stat-label">23.976, 24, 25, 29.97DF, 30, 50, 59.94, 60</span>
             </div>
             <div className="stat-divider"></div>
             <div className="stat">
-              <span className="stat-value">CSV/PDF</span>
+              <span className="stat-value">CSV/NLE</span>
               <span className="stat-label">Export Formats</span>
             </div>
             <div className="stat-divider"></div>
             <div className="stat">
-              <span className="stat-value">NLE</span>
-              <span className="stat-label">Compatible</span>
+              <span className="stat-value">Mic List</span>
+              <span className="stat-label">PDF export with photos</span>
             </div>
           </div>
         </div>
@@ -119,7 +116,7 @@ function App() {
               <div className="mock-app">
                 <div className="mock-header">
                   <div className="mock-logo">Take Note <span>Pro</span></div>
-                  <div className="mock-tc">01:23:45:12</div>
+                  <div className="mock-tc">10:23:32:12</div>
                 </div>
                 <div className="mock-session-bar">
                   <span className="mock-session-name">Session: INT. STUDIO — Day 3</span>
@@ -130,23 +127,23 @@ function App() {
                 </div>
                 <div className="mock-notes">
                   <div className="mock-note">
-                    <span className="mock-note-tc">01:22:15:08</span>
+                    <span className="mock-note-tc">11:22:15:08</span>
                     <div className="mock-note-content">
-                      <span className="mock-note-text">Boom shadow on talent — reposition needed</span>
+                      <span className="mock-note-text">Use boom for this take</span>
                       <span className="mock-note-meta">Quick Note · Boom Op</span>
                     </div>
                   </div>
                   <div className="mock-note">
-                    <span className="mock-note-tc">01:23:02:18</span>
+                    <span className="mock-note-tc">12:15:02:18</span>
                     <div className="mock-note-content">
                       <span className="mock-note-text">Wild track — room tone 30 sec</span>
                       <span className="mock-note-meta">Quick Note · Sound</span>
                     </div>
                   </div>
                   <div className="mock-note">
-                    <span className="mock-note-tc">01:23:30:04</span>
+                    <span className="mock-note-tc">15:23:30:04</span>
                     <div className="mock-note-content">
-                      <span className="mock-note-text">Aircraft noise — hold for quiet</span>
+                      <span className="mock-note-text">This take prefered by the director</span>
                       <span className="mock-note-meta">Quick Note · Sound</span>
                     </div>
                   </div>
@@ -167,7 +164,7 @@ function App() {
           <div className="section-header fade-in">
             <span className="section-tag">Features</span>
             <h2 className="section-title">Everything you need on set</h2>
-            <p className="section-subtitle">Purpose-built tools for sound recordists, script supervisors, and production teams.</p>
+            <p className="section-subtitle">Purpose-built tools for sound recordists, loggers, and production teams.</p>
           </div>
 
           <div className="features-grid">
@@ -184,7 +181,7 @@ function App() {
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="#00ff88" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/><polyline points="14,2 14,8 20,8" stroke="#00ff88" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
               </div>
               <h3>Session Management</h3>
-              <p>Organise notes by shoot day, scene, or setup. Each session tracks its own timecode, metadata, and mic list.</p>
+              <p>Organise notes by shoot day, scene, or setup. Each session tracks its own log, metadata, and mic list.</p>
             </div>
 
             <div className="feature-card fade-in">
@@ -227,7 +224,7 @@ function App() {
         <div className="container">
           <div className="section-header fade-in">
             <span className="section-tag">Export</span>
-            <h2 className="section-title">Straight into your NLE</h2>
+            <h2 className="section-title">Straight into the edit</h2>
             <p className="section-subtitle">Export formats that work with industry-standard editing software.</p>
           </div>
           <div className="export-grid fade-in">
@@ -238,8 +235,8 @@ function App() {
             </div>
             <div className="export-card">
               <div className="export-format">PDF</div>
-              <h4>Sound Report</h4>
-              <p>Professional PDF report with session metadata, mic list, and timestamped notes.</p>
+              <h4>Mic List</h4>
+              <p>Professional PDF export with radio mic channels, names, photos and even timecode stamped person changes.</p>
             </div>
             <div className="export-card highlight">
               <div className="export-format">NLE</div>
@@ -308,8 +305,8 @@ function App() {
           </div>
           <div className="audience-grid fade-in">
             <div className="audience-card">
-              <div className="audience-role">Sound Recordists</div>
-              <p>Log takes, track mic setups, and generate sound reports. Built by one of you.</p>
+              <div className="audience-role">Sound Recordists & assistants</div>
+              <p>Log notes, and document mic logs. Built by one of you.</p>
             </div>
             <div className="audience-card">
               <div className="audience-role">Script Supervisors</div>
@@ -345,12 +342,9 @@ function App() {
         <div className="container footer-inner">
           <div className="footer-brand">
             <div className="logo">
-              <div className="logo-mark">
-                <svg width="24" height="24" viewBox="0 0 32 32" fill="none">
-                  <rect x="2" y="2" width="28" height="28" rx="6" fill="#00ff88" fillOpacity="0.12" stroke="#00ff88" strokeWidth="1.5"/>
-                  <text x="16" y="21" textAnchor="middle" fill="#00ff88" fontFamily="JetBrains Mono, monospace" fontSize="14" fontWeight="700">TN</text>
-                </svg>
-              </div>
+              <div className="footer-brand">
+  <img src="/takenote-icon.png" alt="Take Note Pro" className="logo-icon" />
+</div>
               <span className="logo-text">Take Note <span className="logo-accent">Pro</span></span>
             </div>
             <p className="footer-tagline">Professional timecode logging for film & TV production.</p>
