@@ -265,8 +265,8 @@ function App() {
                 <span className="period">forever</span>
               </div>
               <ul className="pricing-features">
-                <li><span className="check">✓</span> 1 session</li>
-                <li><span className="check">✓</span> Up to 20 notes</li>
+                <li><span className="check">✓</span> Unlimited Sessions</li>
+                <li><span className="check">✓</span> Unlimited Notes</li>
                 <li><span className="check">✓</span> Running timecode</li>
                 <li><span className="check">✓</span> CSV export</li>
                 <li><span className="check">✓</span> PDF export</li>
