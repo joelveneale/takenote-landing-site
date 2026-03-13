@@ -241,14 +241,14 @@ function App() {
             <div className="export-card highlight">
               <div className="export-format">NLE</div>
               <h4>Avid / Premiere / Resolve</h4>
-              <p>Timecode markers ready to import directly into your edit timeline. Pro feature.</p>
-              <span className="pro-badge">PRO</span>
+              <p>Timecode markers ready to import directly into your edit timeline.</p>
+              {/* <span className="pro-badge">PRO</span> */}
             </div>
           </div>
         </div>
       </section>
 
-      {/* Pricing */}
+      {/* Pricing
       <section className="pricing" id="pricing">
         <div className="container">
           <div className="section-header fade-in">
@@ -294,7 +294,7 @@ function App() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Who It's For */}
       <section className="audience">
