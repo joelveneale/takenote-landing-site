@@ -37,7 +37,7 @@ function App() {
           </a>
           <nav className="nav">
             <a href="#features" className="nav-link">Features</a>
-            <a href="#pricing" className="nav-link">Pricing</a>
+            {/* <a href="#pricing" className="nav-link">Pricing</a> */}
             <a href="#export" className="nav-link">Export</a>
             <a href="https://takenotepro.app" className="btn-cta-small">Launch App</a>
           </nav>
@@ -353,7 +353,7 @@ function App() {
             <div className="footer-col">
               <h4>Product</h4>
               <a href="#features">Features</a>
-              <a href="#pricing">Pricing</a>
+              {/* <a href="#pricing">Pricing</a> */}
               <a href="#export">Exports</a>
             </div>
             <div className="footer-col">
