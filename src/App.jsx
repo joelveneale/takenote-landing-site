@@ -49,7 +49,7 @@ function App() {
         </div>
         <div className="mobile-nav">
           <a href="#features" className="nav-link">Features</a>
-          <a href="#pricing" className="nav-link">Pricing</a>
+          {/* <a href="#pricing" className="nav-link">Pricing</a> */}
           <a href="#export" className="nav-link">Export</a>
           <a href="https://takenotepro.app" className="btn-cta-small">Launch App</a>
         </div>
@@ -216,6 +216,11 @@ function App() {
               <p>Attach call sheets, scripts, and reference PDFs directly to your session. Everything in one place, accessible on set.</p>
             </div>
           </div>
+        </div>
+        {/* Free Banner */}
+        <div className="free-banner">
+        <h3>100% Free Forever</h3>
+        <p>All features. No subscriptions. No limits. Built by a sound recordist, for sound recordists.</p>
         </div>
       </section>
 
