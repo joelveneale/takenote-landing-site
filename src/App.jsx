@@ -217,11 +217,7 @@ function App() {
             </div>
           </div>
         </div>
-        {/* Free Banner */}
-        <div className="free-banner">
-        <h3>100% Free Forever</h3>
-        <p>All features. No subscriptions. No limits. Built by a sound recordist, for sound recordists.</p>
-        </div>
+     
       </section>
 
       {/* Export Section */}
