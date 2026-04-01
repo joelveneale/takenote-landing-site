@@ -78,7 +78,7 @@ function App() {
               <span>Launch Web App — Free</span>
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
             </a>
-            <a href="https://apps.apple.com/app/take-note-pro/id6741032498" className="btn btn-ghost">
+            <a href="https://apps.apple.com/app/take-note-pro/id6758275950" className="btn btn-ghost">
               <span>App Store — £4.99</span>
             </a>
           </div>
