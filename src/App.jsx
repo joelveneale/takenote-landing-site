@@ -37,7 +37,7 @@ function App() {
           </a>
           <nav className="nav">
             <a href="#features" className="nav-link">Features</a>
-            {/* <a href="#pricing" className="nav-link">Pricing</a> */}
+            <a href="#pricing" className="nav-link">Pricing</a>
             <a href="#export" className="nav-link">Export</a>
             <a href="https://takenotepro.app" className="btn-cta-small">Launch App</a>
           </nav>
@@ -49,7 +49,7 @@ function App() {
         </div>
         <div className="mobile-nav">
           <a href="#features" className="nav-link">Features</a>
-          {/* <a href="#pricing" className="nav-link">Pricing</a> */}
+          <a href="#pricing" className="nav-link">Pricing</a>
           <a href="#export" className="nav-link">Export</a>
           <a href="https://takenotepro.app" className="btn-cta-small">Launch App</a>
         </div>
@@ -71,14 +71,15 @@ function App() {
           <p className="hero-subtitle fade-in">
             Capture notes that sync with production timecode. Export to industry-standard formats.
             Built by a working sound recordist for real production workflows.
+            Free on the web — also available on the App Store.
           </p>
           <div className="hero-ctas fade-in">
             <a href="https://takenotepro.app" className="btn btn-primary">
-              <span>Launch Web App</span>
+              <span>Launch Web App — Free</span>
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
             </a>
-            <a href="#features" className="btn btn-ghost">
-              <span>See Features</span>
+            <a href="https://apps.apple.com/app/take-note-pro/id6741032498" className="btn btn-ghost">
+              <span>App Store — £4.99</span>
             </a>
           </div>
           <div className="hero-stats fade-in">
@@ -249,53 +250,51 @@ function App() {
         </div>
       </section>
 
-      {/* Pricing
+      {/* Pricing */}
       <section className="pricing" id="pricing">
         <div className="container">
           <div className="section-header fade-in">
             <span className="section-tag">Pricing</span>
-            <h2 className="section-title">Simple, affordable pricing</h2>
-            <p className="section-subtitle">Start free. Upgrade when you need more.</p>
+            <h2 className="section-title">Simple, honest pricing</h2>
+            <p className="section-subtitle">No subscriptions. No recurring fees. No feature gates.</p>
           </div>
 
           <div className="pricing-grid fade-in">
             <div className="pricing-card">
-              <div className="pricing-tier">Free</div>
+              <div className="pricing-tier">Web App</div>
               <div className="pricing-amount">
                 <span className="price">£0</span>
-                <span className="period">forever</span>
+                <span className="period">free forever</span>
               </div>
               <ul className="pricing-features">
-                <li><span className="check">✓</span> Unlimited Sessions</li>
-                <li><span className="check">✓</span> Unlimited Notes</li>
-                <li><span className="check">✓</span> Running timecode</li>
-                <li><span className="check">✓</span> CSV export</li>
-                <li><span className="check">✓</span> PDF export</li>
+                <li><span className="check">✓</span> All features included</li>
+                <li><span className="check">✓</span> Unlimited sessions & notes</li>
+                <li><span className="check">✓</span> All export formats</li>
+                <li><span className="check">✓</span> Cloud sync across devices</li>
+                <li><span className="check">✓</span> Works on any device with a browser</li>
               </ul>
-              <a href="https://takenotepro.app" className="btn btn-outline">Get Started</a>
+              <a href="https://takenotepro.app" className="btn btn-outline">Launch Web App</a>
             </div>
 
             <div className="pricing-card featured">
-              <div className="pricing-popular">Most Popular</div>
-              <div className="pricing-tier">Pro</div>
+              <div className="pricing-popular">Native App</div>
+              <div className="pricing-tier">iOS App</div>
               <div className="pricing-amount">
                 <span className="price">£4.99</span>
-                <span className="period">/year</span>
+                <span className="period">one-time</span>
               </div>
               <ul className="pricing-features">
-                <li><span className="check accent">✓</span> Unlimited sessions</li>
-                <li><span className="check accent">✓</span> Unlimited notes</li>
-                <li><span className="check accent">✓</span> Running timecode</li>
-                <li><span className="check accent">✓</span> CSV & PDF export</li>
-                <li><span className="check accent">✓</span> NLE exports (Avid, Premiere, Resolve)</li>
-                <li><span className="check accent">✓</span> Document upload</li>
-                <li><span className="check accent">✓</span> Cloud sync</li>
+                <li><span className="check accent">✓</span> Everything in the web app</li>
+                <li><span className="check accent">✓</span> Native iOS experience</li>
+                <li><span className="check accent">✓</span> Home screen app</li>
+                <li><span className="check accent">✓</span> Syncs with your web account</li>
+                <li><span className="check accent">✓</span> One purchase, yours forever</li>
               </ul>
-              <a href="https://takenotepro.app" className="btn btn-primary">Start Pro</a>
+              <a href="https://apps.apple.com/app/take-note-pro/id6758275950" className="btn btn-primary">Get on App Store</a>
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* Who It's For */}
       <section className="audience">
@@ -330,11 +329,16 @@ function App() {
         <div className="container fade-in">
           <div className="cta-glow"></div>
           <h2>Ready to streamline your workflow?</h2>
-          <p>Start logging timecoded notes in seconds. No download required.</p>
-          <a href="https://takenotepro.app" className="btn btn-primary btn-lg">
-            <span>Launch Take Note Pro</span>
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
-          </a>
+          <p>Start logging timecoded notes in seconds. Free on the web, no download required.</p>
+          <div className="hero-ctas" style={{ justifyContent: 'center' }}>
+            <a href="https://takenotepro.app" className="btn btn-primary btn-lg">
+              <span>Launch Web App — Free</span>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+            </a>
+            <a href="https://apps.apple.com/app/take-note-pro/id6758275950" className="btn btn-ghost btn-lg">
+              <span>App Store — £4.99</span>
+            </a>
+          </div>
         </div>
       </section>
 
@@ -354,18 +358,23 @@ function App() {
             <div className="footer-col">
               <h4>Product</h4>
               <a href="#features">Features</a>
-              {/* <a href="#pricing">Pricing</a> */}
+              <a href="#pricing">Pricing</a>
               <a href="#export">Exports</a>
             </div>
             <div className="footer-col">
               <h4>App</h4>
               <a href="https://takenotepro.app">Web App</a>
+              <a href="https://apps.apple.com/app/take-note-pro/id6758275950">iOS App</a>
               <a href="https://takenotepro.app">Sign In</a>
             </div>
           </div>
         </div>
         <div className="container footer-bottom">
           <p>© {new Date().getFullYear()} Take Note Pro. All rights reserved.</p>
+          <div className="footer-legal">
+            <a href="https://takenotepro.app/terms">Terms of Use</a>
+            <a href="https://takenotepro.app/privacy">Privacy Policy</a>
+          </div>
         </div>
       </footer>
     </div>
